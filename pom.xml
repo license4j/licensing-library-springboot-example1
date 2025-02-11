@@ -33,19 +33,6 @@
         <maven.compiler.release>17</maven.compiler.release>
     </properties>
     
-    <repositories>
-        <repository>
-            <releases>
-                <enabled>true</enabled>
-                <updatePolicy>always</updatePolicy>
-                <checksumPolicy>fail</checksumPolicy>
-            </releases>
-            <id>licensing-library</id>
-            <name>LICENSE4J Licensing Library Maven Repository</name>
-            <url>http://www.license4j.com/maven/</url>
-            <layout>default</layout>
-        </repository>
-    </repositories>
     
     <build>
         <plugins>
