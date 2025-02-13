@@ -33,6 +33,11 @@ public class RootController {
                       System OS Family        : %s
                       System Java             : %s
                       System CPU Core Count   : %s
+                      System is Virtual       : %s
+                      System is Cloud         : %s
+                      System is Container     : %s
+                      Hypervisor              : %s
+                      Cloud Provider          : %s
                       
                       </pre></body></html>
                       """
@@ -52,7 +57,12 @@ public class RootController {
                         License.getInstance().getSystemInformation().getDomainName(),
                         License.getInstance().getSystemInformation().getOSFamily(),
                         License.getInstance().getSystemInformation().getJava(),
-                        License.getInstance().getSystemInformation().getCPUCoreCount());
+                        License.getInstance().getSystemInformation().getCPUCoreCount(),
+                        License.getInstance().getSystemInformation().isVirtual(),
+                        License.getInstance().getSystemInformation().isCloud(),
+                        License.getInstance().getSystemInformation().isContainer(),
+                        License.getInstance().getSystemInformation().getHypervisor(),
+                        License.getInstance().getSystemInformation().getCloudProvider());
 
         return html;
     }

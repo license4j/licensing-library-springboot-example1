@@ -8,9 +8,10 @@ import org.springframework.stereotype.Component;
 public class LicenseComponent {
 
     /**
-     * Gets the license key from application properties "license.key" config (application.properties).
-     * 
-     * @param key 
+     * Gets the license key from application properties "license.key" config
+     * (application.properties).
+     *
+     * @param key
      */
     public LicenseComponent(@Value("${license.key}") String key) {
         /**
