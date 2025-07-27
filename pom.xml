@@ -58,7 +58,7 @@
         <dependency>
             <groupId>com.license4j</groupId>
             <artifactId>licensing-library</artifactId>
-            <version>5.0.2</version>
+            <version>5.0.4</version>
         </dependency>
     </dependencies>
 
